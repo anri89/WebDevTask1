@@ -1,0 +1,264 @@
+/* Base Styles (Mobile-First) */
+body {
+    background-color: #e9e9e9;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #e9e9e9;
+    text-align: center;
+    padding: 12px;
+}
+
+header .logo svg {
+    width: 80px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav a {
+    color: #261c1c;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #a43d3d;
+    text-decoration: underline;
+}
+
+main {
+    background-color: #fff;
+    padding: 12px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.post-title h1 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 12px 0 0 0;
+}
+
+.post-title h2 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.post-content h2 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.post-content p {
+    font-size: 0.9rem;
+    margin: 12px 0;
+    text-align: justify;
+}
+
+/* Album Gallery - Mobile */
+.album-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Author Section - Mobile */
+.author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.author-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.author h3 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.author p {
+    font-size: 0.9rem;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background-color: #14181d;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* Large Mobile (540px to 720px) */
+@media (min-width: 540px) and (max-width: 720px) {
+    .post-title h1 {
+        font-size: 2.8rem;
+    }
+    
+    .post-title h2, .post-content h2 {
+        font-size: 2rem;
+    }
+
+    .post-content p {
+        font-size: 1rem;
+    }
+
+    .album-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .author-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .author h3, .author p {
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablet (720px to 1024px) */
+@media (min-width: 720px) and (max-width: 1024px) {
+    .post-title h1 {
+        font-size: 3rem;
+    }
+
+    .post-title h2, .post-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .post-content p {
+        font-size: 1.1rem;
+    }
+
+    .album-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .author-photo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1200px;
+        padding: 50px;
+    }
+
+    .post-title h1 {
+        font-size: 8.0rem;
+        text-align: left;
+    }
+
+    .post-title h2 {
+        font-size: 3.2rem;
+        text-align: left;
+    }
+
+    .post-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .post-content h2 {
+        font-size: 2.2rem;
+        text-align: left;
+        grid-column: span 3;
+    }
+
+    .post-content p {
+        font-size: 1.8rem;
+    }
+
+    .album-gallery {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .album.eulogy-for-evolution {
+        grid-column: 1 / 2;
+        grid-row: span 2;
+    }
+
+    .album.album-2, .album.album-3, .album.album-4, .album.album-5 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .album.album-6 {
+        display: none;
+    }
+
+    .author {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 50px 0;
+    }
+
+    .author-photo {
+        width: 220px;
+        height: 220px;
+        margin-right: 90px;
+    }
+
+    .author-text {
+        max-width: 70%;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .author h3 {
+        font-size: 2.7rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .author p {
+        font-size: 1.6rem;
+    }
+}

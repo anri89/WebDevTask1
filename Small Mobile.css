@@ -1,0 +1,117 @@
+/* Small Mobile (360px to 540px) */
+@media (max-width: 540px) {
+    /* General Layout */
+    body {
+        background-color: #e9e9e9;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #333333;
+        line-height: 1.6;
+    }
+
+    header {
+        padding: 12px;  /* Reduced padding for smaller screens */
+        text-align: center;
+    }
+
+    header .logo svg {
+        width: 80px;  /* Smaller logo size */
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;  /* Compact spacing for navigation links */
+    }
+
+    header nav a {
+        font-size: 1.2rem;
+    }
+
+    main {
+        background-color: #fff;
+        padding: 12px; /* Standard spacing for small mobile */
+        max-width: 100%; /* Use full width on small screens */
+        margin: 0;
+    }
+
+    /* Title Section */
+    .post-title h1 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 2rem; /* Smaller font for small screens */
+        text-align: center;
+        margin: 12px 0 0 0;
+    }
+
+    .post-title h2 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 1.6rem; /* Subtitle font size for mobile */
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    /* Content Section */
+    .post-content h2 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 1.6rem; /* Smaller heading size */
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .post-content p {
+        font-size: 0.9rem; /* Smaller font size for readability */
+        margin: 12px 0; /* Consistent spacing for paragraphs */
+        text-align: justify;
+    }
+
+    /* Album Gallery */
+    .album-gallery {
+        display: grid;
+        grid-template-columns: 1fr; /* Single-column layout */
+        gap: 12px; /* Compact gap between albums */
+        padding: 12px 0;
+    }
+
+    .album img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Author Section */
+    .author {
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .author-photo {
+        width: 120px; /* Smaller author photo */
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .author h3 {
+        font-size: 1.2rem; /* Reduced font size */
+        margin-top: 10px;
+    }
+
+    .author p {
+        font-size: 0.9rem;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #14181d;
+        color: #ffffff;
+        text-align: center;
+        padding: 12px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+}
