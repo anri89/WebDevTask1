@@ -1,0 +1,800 @@
+/* Start: Main Css (style-1) */
+body {
+    background-color: #e9e9e9;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+
+header {
+    background-color: #e9e9e9;
+    text-align: center;
+    padding: 12px;
+}
+
+
+
+header .logo svg {
+    width: 80px; /* Default size for small screens */
+}
+
+
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Even spacing for links */
+}
+
+header nav a {
+    color: #261c1c;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #a43d3d;
+    text-decoration: underline;
+}
+
+
+
+/* Moving down to the main (the actual page)*/
+main {
+    background-color: #fff;
+    padding: 12px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.post-title h1 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 12px 0 0 0;
+}
+
+.post-title h2 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.post-content h2 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.post-content p {
+    font-size: 0.9rem;
+    margin: 12px 0;
+    text-align: justify;
+}
+
+.album-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px 0;
+    
+}
+
+
+
+
+.album img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+.author {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.author-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.author h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.author p {
+    font-size: 0.9rem;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+footer {
+    background-color: #14181d;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+
+
+
+
+/* Large Mobile (540px to 720px) */
+@media (min-width: 540px) and (max-width: 720px) {
+    header {
+        padding: 20px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    header nav a {
+        font-size: 1.4rem;
+    }
+
+
+
+
+
+    .post-title h1 {
+        font-size: 2.8rem;
+    }
+
+    .post-title h2 {
+        font-size: 2.2rem;
+    }
+
+    .post-content h2 {
+        font-size: 2rem;
+    }
+
+    .post-content p {
+        font-size: 1rem;
+    }
+
+    .album-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+
+
+
+    .author {
+        display: flex;
+        flex-direction: column;     /* Thios vertically stack the parts */
+        align-items: center;        
+        text-align: center;         
+        padding: 20px 0;
+    }
+
+    .author-photo {
+        width: 150px;               
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;        /* !!!!space between image and text!!!! */
+    }
+
+    .author h3 {
+        font-size: 1.6rem;          
+        margin: 10px 0;
+    }
+
+    .author p {
+        font-size: 1rem;
+        max-width: 80%;             
+        margin: 0 auto;
+    }
+}
+
+
+
+/* Tablet (720px to 1024px) */
+@media (min-width: 720px) and (max-width: 1024px) {
+
+
+
+
+
+    header {
+        padding: 30px;
+    }
+
+    header .logo svg {
+        width: 80px;
+    }
+
+    header nav {
+        gap: 40px;
+    }
+
+    header nav a {
+        font-size: 1.6rem;
+    }
+
+
+
+
+
+
+    .post-title h1 {
+        font-size: 3rem;
+    }
+
+    .post-title h2 {
+        font-size: 2.4rem;
+    }
+
+    .post-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .post-content p {
+        font-size: 1.1rem;
+    }
+
+
+
+
+
+
+    .album-gallery {
+        grid-template-columns: 1fr 1fr; /* thats for 2-column layout */
+        gap: 30px;
+    }
+
+
+
+
+
+    .author-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+
+
+
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+.author {
+    display: flex;                /* i used flex box to arrange items */
+    flex-direction: row-reverse;  /* Put the image on the right. */
+    align-items: flex-start;      /* place items to the top */
+    padding: 30px 0;
+    text-align: left;
+}
+
+.author-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.author-text {
+    max-width: 60%;               
+    text-align: left;             
+}
+
+.author h3 {
+    font-size: 1.6rem;          
+    margin: 10px 0;
+    display: block;             
+    text-align: center;         
+    width: 100%;          
+}
+
+.author p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+
+
+
+
+
+.album-5,
+    .album-6 {
+        display: none;
+    }
+    
+    .album-gallery {
+        grid-template-columns: 1fr 1fr; /* continue using a two-column arrangement   */
+        gap: 30px;
+    }
+
+
+/* Small Mobile (360px to 540px) */
+@media (max-width: 540px) {
+    /* start layout  */
+    body {
+        background-color: #e9e9e9;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #333333;
+        line-height: 1.6;
+    }
+
+    header {
+        padding: 12px;  /* less cushioning for screens that are smaller  */
+        text-align: center;
+    }
+
+    header .logo svg {
+        width: 80px;  
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;  
+    }
+
+    header nav a {
+        font-size: 1.2rem;
+    }
+
+
+
+
+
+    main {
+        background-color: #fff;
+        padding: 12px; /* standard spacing for small mobile (one of the spesofocation list)*/
+        max-width: 100%; 
+        margin: 0;
+    }
+
+
+
+
+
+    
+    .post-title h1 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 2rem; 
+        text-align: center;
+        margin: 12px 0 0 0;
+    }
+
+    .post-title h2 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 1.6rem; 
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    /* Content Section */
+    .post-content h2 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 1.6rem; 
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .post-content p {
+        font-size: 0.9rem; 
+        margin: 12px 0; 
+        text-align: justify;
+    }
+
+     
+
+
+
+    .album-gallery {
+        display: grid;
+        grid-template-columns: 1fr; /* one-column design */
+        gap: 12px; 
+        padding: 12px 0;
+    }
+
+    .album img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+
+
+    
+    .author {
+        display: flex;
+        flex-direction: column;     /* vertically stack the parts. */
+        align-items: center;        
+        text-align: center;         
+        padding: 12px 0;
+    }
+
+    .author-photo {
+        width: 120px;               /* Smaller photo size for small mobile */
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 10px;        /* space between image and text  */
+    }
+
+    .author h3 {
+        font-size: 1.6rem;          /*for large mobile devices, change the font size  */
+        margin: 10px 0;
+        display: block;             
+        text-align: center;         
+        width: 100%;
+    }
+
+    .author p {
+        font-size: 0.9rem;          
+        max-width: 90%;             
+        margin: 0 auto;
+    }
+}
+
+    /* Footer */
+    footer {
+        background-color: #14181d;
+        color: #ffffff;
+        text-align: center;
+        padding: 12px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+
+
+
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+
+
+
+    /* Start */
+    header {
+        padding: 50px;
+    }
+
+    header .logo svg {
+        width: 200px; 
+    }
+
+    header nav {
+        gap: 280px; 
+    }
+
+    header nav a {
+        font-size: 1.6rem; 
+    }
+
+    main {
+        background-color: #fff;
+        padding: 50px; 
+        max-width: 1200px; 
+        margin: auto;
+    }
+
+    
+
+
+
+    .post-title h1 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 8.0rem; 
+        text-align: left; 
+        margin: 20px 0;
+    }
+
+    .post-title h2 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 3.2rem; 
+        text-align: left; 
+        margin-top: -10px;
+    }
+
+    
+
+
+
+    .post-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /*  three-column arrangement */
+        gap: 30px;
+        
+    }
+    .post-content h2 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 2.2rem; 
+        text-align: left;
+        margin: 20px 0;
+        grid-column: span 3; 
+    }
+
+    .post-content p {
+        font-size: 1.8rem; 
+        margin: 12px 0;
+        text-align: justify;
+    }
+
+
+
+
+
+
+    
+    .album-gallery {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr; 
+        gap: 20px;
+    }
+
+    .album.featured-album {
+        grid-column: 1 / 2; 
+        grid-row: span 2;   
+    }
+
+    .album img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+   
+
+
+
+
+    .author {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 50px 0;
+    }
+
+    .author-photo {
+        width: 180px; 
+        height: 180px;
+        border-radius: 50%;
+        margin-right: 20px; 
+    }
+
+    .author h3 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .author p {
+        font-size: 1.1rem;
+        max-width: 70%; 
+    }
+    @media (min-width: 1024px) {
+        .extended-paragraph {
+            grid-column: span 3;  
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: left; 
+        }
+    }
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    .album-gallery {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr; /* larger column for featured album */
+        grid-template-rows: 1fr 1fr; /* Two rows for smaller albums */
+        gap: 20px;
+    }
+
+    /* assigning specific grid positions to create the desired layout */
+    .album.eulogy-for-evolution{
+        grid-column: 1 / 2; /* complete left column */
+        grid-row: 1 / span 2; /* Span across two rows */
+    }
+
+    .album.album-2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .album.album-3 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .album.album-4 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .album.album-5 {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+   
+    .album.album-6 {
+        display: none;
+    }
+
+    
+    .album img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+
+   /* making sure that every heading and the paragraph or paragraphs that follow it fit inside the same column */
+    .post-content h2 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 2.2rem;
+        text-align: left;
+        margin: 20px 0;
+        grid-column: span 1; /* each heading takes one column */
+    }
+
+    
+
+    .post-content p {
+        font-size: 1.7rem;
+        margin: 12px 0;
+        text-align: justify;
+    }
+
+
+
+
+
+    /* personalised classes to regulate which column each content set is in */
+    .post-content .column1 {
+        grid-column: 1; 
+    }
+
+    .post-content .column2 {
+        grid-column: 2; 
+    }
+
+    .post-content .column3 {
+        grid-column: 3; 
+    }
+}
+
+.post-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 30px;
+}
+
+/*  this assign distinct columns to every content set */
+.column1 {
+    grid-column: 1; 
+}
+.column2 {
+    grid-column: 2; 
+}
+.column3 {
+    grid-column: 3; 
+}
+
+
+.post-content h2.column2, .post-content h2.column3,
+.post-content p.column2, .post-content p.column3 {
+    margin-top: 0; /*makes ensuring that column 1 is aligned */
+}
+
+/*This part is to make sure that each column's items begin at the top */
+.post-content h2.column1,
+.post-content p.column1,
+.post-content h2.column2,
+.post-content p.column2,
+.post-content h2.column3,
+.post-content p.column3 {
+    align-self: start;
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    .author {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 50px 0;
+    }
+
+    .author-photo {
+        order: 2; 
+        width: 220px; 
+        height: 220px;
+        border-radius: 50%;
+        margin-right: 90px;
+    }
+
+    .author-text {
+        order: 1; /* Maintain the left-hand text */
+        max-width: 70%; /* this is to improve readability, adjust the text width */
+        font-size: 1.0rem; 
+        text-align: left; 
+        margin-left: auto; 
+    
+   
+    }
+    .author h3 {
+        font-size: 2.7rem; 
+        margin: 0;
+        text-align: center; 
+        margin-left: -110px; 
+    }
+
+    .author p {
+        font-size: 1.6rem; 
+        line-height: 1.8; 
+        margin: 10px 0 0 0;
+    }
+}
+    
+    
+
+
+
+
+    footer {
+        background-color: #14181d;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 50px; 
+    }
+
+    footer p {
+        font-size: 1rem; 
+        margin: 0;
+    }
+
+
